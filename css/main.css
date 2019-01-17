@@ -31,15 +31,13 @@ p {
   margin: 0;
 }
 
-
-
 .section-body {
   padding: 0 1rem;
 }
 
-.btn {
+a {
   display: inline-block;
-  padding:  0.5em 0.75em;
+  padding: .5em .75em;
   background-color: #555;
   border-radius: 4px;
   color: #fff;
@@ -51,13 +49,13 @@ p {
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #fff;
   border-color: #555;
 }
 
 .img-flex {
   display: block;
- width: 100%;
+  width: 100%;
 }
 
 .img-flex img {
@@ -74,46 +72,40 @@ p {
 
 }
 
+@media only screen and (min-width: 38em) {
 
-    @media only screen and (min-width: 38em) {
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
 
-      html {
-        font-size: 110%;
-        line-height: 1.4;
-      }
+  .section-body {
+    width: 48.2%;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+    margin-top: 1em;
+  }
 
+  .img-flex {
+    max-width: 50%;
+    display: inline-block;
+    margin-bottom: 1.4em;
+    margin-left: .1em;
+  }
 
- .section-body {
-     width: 48.2%;
-     display: inline-block;
-     margin: 0;
-     text-align: left;
-     margin-top: 1em;
-   }
+  .btn {
+    margin-top: 1.4em;
+  }
 
-   .img-flex {
-     max-width: 50%;
-     display: inline-block;
-     margin-bottom:  1.4em;
-     margin-left: .1em;
-   }
+}
 
-   .btn{
-     margin-top: 1.4em;
-   }
-
-
-
-
- }
-
- @media only screen and (min-width: 60em) {
+@media only screen and (min-width: 60em) {
 
   html {
     font-size: 120%;
     line-height: 1.5;
   }
-
 
   .section-body {
     max-width: 425px;
@@ -121,23 +113,23 @@ p {
     margin: auto;
 
     text-align: left;
-}
+  }
+
   .img-flex {
-      width: 46%;
+    width: 46%;
+  }
 
 }
-
 
 @media only screen and (min-width: 90em) {
 
   html {
     font-size: 130%;
-    line-height: 1.5;
-    }
+  }
 
-    section {
+  section {
     text-align: center;
-    margin-top: 0em;
+    margin-top: 0;
   }
 
   .section-body {
@@ -148,9 +140,10 @@ p {
     max-width: 600px;
   }
 
-
-.img-flex {
+  .img-flex {
     width: 36%;
     vertical-align: middle;
     margin-top: -5em;
+  }
+
 }
